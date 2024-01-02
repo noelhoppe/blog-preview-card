@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+:root {
+    --clr-yellow: hsl(47, 88%, 63%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey: hsl(0, 0%, 50%);
+    --clr-black: hsl(0, 0%, 7%);
+    --font-weight-bold: 800;
+    --font-weight-regular: 600;
+    font-family: Figtree;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h1:hover {
+    color: var(--clr-yellow);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-yellow);
+}
+
+main {
+    max-width: 20rem;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px black;
+    background-color: var(--clr-white)
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+main > :nth-child(2) {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: var(--clr-yellow);
+    font-weight: var(--font-weight-bold);
+}
+
+main > div {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    font-weight: var(--font-weight-bold);
+}
+
+main > div >img {
+    height: 100%;
+}
+
+h1 + p {
+    color: var(--clr-grey);
+    line-height: 1.5rem;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+
+
+
+
